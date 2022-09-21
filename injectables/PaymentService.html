@@ -1,0 +1,1535 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>po-slibrary documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">po-slibrary documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >PaymentService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/poslibrary/src/lib/services/payment/payment.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkPaymentStatus" >checkPaymentStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteMobilePayment" >deleteMobilePayment</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generatePaymentNo" >generatePaymentNo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getPayment" >getPayment</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleError" >handleError</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#performPayMent" >performPayMent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#performPayMent_" >performPayMent_</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#returnLocalpayment" >returnLocalpayment</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#startPayMent" >startPayMent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(orderService: <a href="../injectables/OrderService.html" target="_self">OrderService</a>, deffaultserve: <a href="../injectables/DefaultService.html" target="_self">DefaultService</a>, databaseServe: <a href="../injectables/DatabaseService.html" target="_self">DatabaseService</a>, datepipe: <a href="https://angular.io/api/common/DatePipe" target="_blank">DatePipe</a>, initdataService: <a href="../injectables/InitDataService.html" target="_self">InitDataService</a>, logServe: <a href="../injectables/LogService.html" target="_self">LogService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>orderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OrderService.html" target="_self" >OrderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>deffaultserve</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DefaultService.html" target="_self" >DefaultService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>databaseServe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatabaseService.html" target="_self" >DatabaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>datepipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/DatePipe" target="_blank" >DatePipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>initdataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InitDataService.html" target="_self" >InitDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logServe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LogService.html" target="_self" >LogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPaymentStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkPaymentStatus</b></span>
+                        <a href="#checkPaymentStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkPaymentStatus(orderidForcheckingPaymentStatus: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderidForcheckingPaymentStatus</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteMobilePayment"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteMobilePayment</b></span>
+                        <a href="#deleteMobilePayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteMobilePayment(orderidForDeletingPayment: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="340"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:340</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderidForDeletingPayment</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generatePaymentNo"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generatePaymentNo</b></span>
+                        <a href="#generatePaymentNo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generatePaymentNo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="359"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:359</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPayment"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getPayment</b></span>
+                        <a href="#getPayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPayment(referenceForFetchingPayment: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="382"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:382</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>referenceForFetchingPayment</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleError"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleError</b></span>
+                        <a href="#handleError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleError(error: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="597"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:597</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>error</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="performPayMent"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>performPayMent</b></span>
+                        <a href="#performPayMent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>performPayMent(uidataForPerformingPayment: <a href="../classes/UIMoMoData.html" target="_self">UIMoMoData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uidataForPerformingPayment</td>
+                                    <td>
+                                                <code><a href="../classes/UIMoMoData.html" target="_self" >UIMoMoData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="performPayMent_"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>performPayMent_</b></span>
+                        <a href="#performPayMent_"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>performPayMent_(uidataTest: <a href="../classes/UIMoMoData.html" target="_self">UIMoMoData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="492"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:492</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uidataTest</td>
+                                    <td>
+                                                <code><a href="../classes/UIMoMoData.html" target="_self" >UIMoMoData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="returnLocalpayment"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>returnLocalpayment</b></span>
+                        <a href="#returnLocalpayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>returnLocalpayment(orderidForfetchingLocalPayment: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="590"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:590</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderidForfetchingLocalPayment</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startPayMent"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>startPayMent</b></span>
+                        <a href="#startPayMent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>startPayMent(orderid: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/payment/payment.service.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderid</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { LogService } from &#x27;./../Logs/log.service&#x27;;
+import { DataRow, Field } from &#x27;./../../models/ResponseData&#x27;;
+import { DatabaseService } from &#x27;./../database/database.service&#x27;;
+import { CPayment } from &#x27;./../../models/order&#x27;;
+import { DefaultService } from &#x27;./../default/default.service&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { UIMoMoData } from &#x27;../../models/datefromUi&#x27;;
+import { OrderService } from &#x27;../order/order.service&#x27;;
+import { firstValueFrom } from &#x27;rxjs&#x27;;
+import { ModelCRUDPayCompare, PayCompare } from &#x27;../../models/ModelCRUD&#x27;;
+import { ModelCRUDRequest, MyData } from &#x27;../../models/ModelCRUDRequest&#x27;;
+import { InitDataService } from &#x27;../web-services/init-data-service/init-data.service&#x27;;
+import { DatePipe } from &#x27;@angular/common&#x27;;
+import { Log } from &#x27;../../models/log&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class PaymentService {
+  constructor(
+    private orderService: OrderService,
+    private deffaultserve: DefaultService,
+    private databaseServe: DatabaseService,
+    private datepipe: DatePipe,
+    private initdataService: InitDataService,
+    private logServe: LogService
+  ) {}
+
+  async startPayMent(orderid: any) {
+    return this.orderService.updateOrder(orderid, &#x27;open&#x27;, 0, 0, 0, 0, 0);
+  }
+
+  async checkPaymentStatus(orderidForcheckingPaymentStatus: string) {
+    if (orderidForcheckingPaymentStatus &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;the order id cannot be null&#x27;);
+    }
+
+    if (orderidForcheckingPaymentStatus &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide the order&#x27;);
+    }
+
+    // we are saving the log for indicating that the system has started check the payment from the backend
+    let createdForcheckingPaymentStatus &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+    // upload order
+    let logForcheckingPaymentStatus &#x3D; new Log();
+    logForcheckingPaymentStatus.L_created &#x3D; createdForcheckingPaymentStatus;
+    logForcheckingPaymentStatus.L_id &#x3D; this.logServe.generateLogId();
+    logForcheckingPaymentStatus.L_msg &#x3D; &#x27; Check payment status: Start check &#x27; + createdForcheckingPaymentStatus + &#x27; ...&#x27;;
+    logForcheckingPaymentStatus.L_key &#x3D; &#x27;order&#x27;;
+    logForcheckingPaymentStatus.L_data &#x3D; orderidForcheckingPaymentStatus;
+    this.logServe.newLog(logForcheckingPaymentStatus);
+    const resForcheckingPaymentStatus &#x3D; await this.orderService.checkIPaymentConfirmation(orderidForcheckingPaymentStatus);
+    // we are saving the log immediatly after the backend&#x27;s response
+    createdForcheckingPaymentStatus &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+    // upload order
+    logForcheckingPaymentStatus &#x3D; new Log();
+    logForcheckingPaymentStatus.L_created &#x3D; createdForcheckingPaymentStatus;
+    logForcheckingPaymentStatus.L_id &#x3D; this.logServe.generateLogId();
+    logForcheckingPaymentStatus.L_msg &#x3D;
+      &#x27; Check payment status: Successful . Backend response : &#x27; +
+      resForcheckingPaymentStatus +
+      createdForcheckingPaymentStatus +
+      &#x27; ...&#x27;;
+    logForcheckingPaymentStatus.L_key &#x3D; &#x27;check_payment&#x27;;
+    logForcheckingPaymentStatus.L_data &#x3D; resForcheckingPaymentStatus;
+    await this.logServe.newLog(logForcheckingPaymentStatus);
+    if (resForcheckingPaymentStatus !&#x3D;&#x3D; null &amp;&amp; resForcheckingPaymentStatus !&#x3D;&#x3D; undefined) {
+      return resForcheckingPaymentStatus;
+    } else {
+      throw new Error(&#x27;cannot call backend process&#x27;);
+    }
+  }
+
+  async performPayMent(uidataForPerformingPayment: UIMoMoData) {
+    let resultForPerformingPayment &#x3D; false;
+    if (
+      uidataForPerformingPayment.c_order_id &#x3D;&#x3D;&#x3D; undefined ||
+      uidataForPerformingPayment.c_order_id &#x3D;&#x3D;&#x3D; null ||
+      uidataForPerformingPayment.c_order_id &#x3D;&#x3D;&#x3D; &#x27;&#x27;
+    ) {
+      throw new Error(&#x27;provide order id&#x27;);
+    }
+
+    if (
+      uidataForPerformingPayment.itext_reciept_amount &#x3D;&#x3D;&#x3D; undefined ||
+      uidataForPerformingPayment.itext_reciept_amount &#x3D;&#x3D;&#x3D; null ||
+      uidataForPerformingPayment.itext_reciept_amount &lt; 0
+    ) {
+      throw new Error(&#x27;provide amount received&#x27;);
+    }
+
+    if (
+      uidataForPerformingPayment.payAmount &#x3D;&#x3D;&#x3D; undefined ||
+      uidataForPerformingPayment.payAmount &#x3D;&#x3D;&#x3D; null ||
+      uidataForPerformingPayment.payAmount &lt; 0
+    ) {
+      throw new Error(&#x27;provide amount&#x27;);
+    }
+    // we initializing log variables
+    let logidForPerformingPayment &#x3D; this.logServe.generateLogId();
+    let createdForPerformingPayment &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+    let msgForPerformingPayment &#x3D; &#x27;&#x27;;
+    let logForPerformingPayment &#x3D; new Log();
+    logForPerformingPayment.L_id &#x3D; logidForPerformingPayment;
+    logForPerformingPayment.L_msg &#x3D; msgForPerformingPayment;
+    logForPerformingPayment.L_created &#x3D; createdForPerformingPayment;
+    const defautldataForPerformingPayment &#x3D; await this.deffaultserve.getDefaultSettings();
+    const userForPerformingPayment &#x3D; await this.databaseServe.getUser();
+    const c_payForPerformingPayment &#x3D; new CPayment();
+
+    if (defautldataForPerformingPayment) {
+      let paymentnoForPerformingPayment &#x3D; this.generatePaymentNo();
+      c_payForPerformingPayment.Reference &#x3D; paymentnoForPerformingPayment;
+      c_payForPerformingPayment.AD_Org_ID &#x3D; defautldataForPerformingPayment.DefaultOrganization;
+      c_payForPerformingPayment.C_BPartner_ID &#x3D; defautldataForPerformingPayment.DefaultBusinessPartner;
+      c_payForPerformingPayment.C_BankAccount_ID &#x3D; defautldataForPerformingPayment.DefaultBankAccount;
+      c_payForPerformingPayment.C_Currency_ID &#x3D; defautldataForPerformingPayment.DefaultCurrency;
+      c_payForPerformingPayment.C_DocType_ID &#x3D; defautldataForPerformingPayment.DefaultDocType;
+      c_payForPerformingPayment.C_Order_ID &#x3D; uidataForPerformingPayment.c_order_id;
+      c_payForPerformingPayment.Description &#x3D; &#x27;&#x27;;
+      c_payForPerformingPayment.IEXT_Receipt_Amnt &#x3D; uidataForPerformingPayment.itext_reciept_amount;
+      c_payForPerformingPayment.PayAmt &#x3D; uidataForPerformingPayment.payAmount;
+      c_payForPerformingPayment.Payment_Created_Date &#x3D; new Date();
+      c_payForPerformingPayment.Payment_Upload_Date &#x3D; new Date();
+      c_payForPerformingPayment.SalesRep_ID &#x3D; userForPerformingPayment[0].AD_User_ID;
+      if (uidataForPerformingPayment.flag &#x3D;&#x3D;&#x3D; &#x27;M&#x27;) {
+        // we are checking the phone number when using ipay
+        if (uidataForPerformingPayment.phone &#x3D;&#x3D;&#x3D; undefined) {
+          throw new Error(
+            &#x27;Mobile payment has been set, but the costumer phone number is undefined&#x27;
+          );
+        }
+
+        if (uidataForPerformingPayment.phone &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+          throw new Error(
+            &#x27;Mobile payment has been set, but the costumer phone number is empty&#x27;
+          );
+        }
+
+        if (uidataForPerformingPayment.phone &#x3D;&#x3D;&#x3D; null) {
+          throw new Error(
+            &#x27;Mobile payment has been set, but the costumer phone number is null&#x27;
+          );
+        }
+        c_payForPerformingPayment.Phone &#x3D; uidataForPerformingPayment.phone;
+        c_payForPerformingPayment.TenderType &#x3D; &#x27;M&#x27;;
+      } else if (uidataForPerformingPayment.flag &#x3D;&#x3D;&#x3D; &#x27;P&#x27;) {
+        c_payForPerformingPayment.TenderType &#x3D; defautldataForPerformingPayment.DefaultTenderType;
+        c_payForPerformingPayment.Phone &#x3D; &#x27;&#x27;;
+      } else {
+        throw new Error(&#x27;invalid tender type&#x27;);
+      }
+      c_payForPerformingPayment.DocumentNO &#x3D; &#x27;&#x27;;
+
+      if (uidataForPerformingPayment.payType &#x3D;&#x3D;&#x3D; &#x27;PO&#x27;) {
+        const res &#x3D; await this.databaseServe.createPayment(c_payForPerformingPayment);
+        if (res.rowsAffected &#x3D;&#x3D;&#x3D; 1) {
+          // we are saving the log for indicating that the payment has been created locally successfully
+          msgForPerformingPayment &#x3D;
+            &#x27; Create Order and perform the payment: Payment created locally successfully. &#x27; +
+            createdForPerformingPayment;
+          logForPerformingPayment.L_key &#x3D; &#x27;PO_request_order&#x27;;
+          logForPerformingPayment.L_data &#x3D; JSON.stringify(c_payForPerformingPayment);
+
+          logForPerformingPayment.L_msg &#x3D; msgForPerformingPayment;
+          // saving log
+          await this.logServe.newLog(logForPerformingPayment);
+
+          // we are creating the log for indicating that the system has started uploading the order
+          logidForPerformingPayment &#x3D; this.logServe.generateLogId();
+
+          createdForPerformingPayment &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+          // upload order
+          logForPerformingPayment &#x3D; new Log();
+          logForPerformingPayment.L_created &#x3D; createdForPerformingPayment;
+          logForPerformingPayment.L_id &#x3D; logidForPerformingPayment;
+          logForPerformingPayment.L_msg &#x3D;
+            &#x27; Create Order and perform the payment: Start uploading the order. &#x27; +
+            createdForPerformingPayment +
+            &#x27; Order info: &#x27; +
+            JSON.stringify(uidataForPerformingPayment);
+          logForPerformingPayment.L_key &#x3D; &#x27;PO_request_order&#x27;;
+          logForPerformingPayment.L_data &#x3D; JSON.stringify(uidataForPerformingPayment);
+          await this.logServe.newLog(logForPerformingPayment);
+          const uoresForPerformingPayment &#x3D; await this.orderService.uploadOrderData(
+            uidataForPerformingPayment.c_order_id
+          );
+          // we are saving the log immediatly after the backend&#x27;s response
+          logidForPerformingPayment &#x3D; this.logServe.generateLogId();
+          createdForPerformingPayment &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+
+          msgForPerformingPayment &#x3D;
+            &#x27; Create Order and perform the payment: Order upload successfully to the backend. Backend respose:  &#x27; +
+            uoresForPerformingPayment +
+            createdForPerformingPayment +
+            &#x27; ....&#x27;;
+          logForPerformingPayment &#x3D; new Log();
+          logForPerformingPayment.L_id &#x3D; logidForPerformingPayment;
+          logForPerformingPayment.L_msg &#x3D; msgForPerformingPayment;
+          logForPerformingPayment.L_created &#x3D; createdForPerformingPayment;
+
+          logForPerformingPayment.L_key &#x3D; &#x27;PO_request_Response&#x27;;
+          logForPerformingPayment.L_data &#x3D; uoresForPerformingPayment;
+          // saving log
+          await this.logServe.newLog(logForPerformingPayment);
+          if (uoresForPerformingPayment !&#x3D;&#x3D; undefined &amp;&amp; uoresForPerformingPayment !&#x3D;&#x3D; null &amp;&amp; uoresForPerformingPayment !&#x3D;&#x3D; &#x27;&#x27;) {
+            // we are saving the log for indicating that the system has started uploading the payment to the backend
+            logForPerformingPayment &#x3D; new Log();
+            logForPerformingPayment.L_created &#x3D; createdForPerformingPayment;
+            logForPerformingPayment.L_id &#x3D; logidForPerformingPayment;
+            logForPerformingPayment.L_msg &#x3D;
+              &#x27; Create Order and perform the payment: Start uploading the payment &#x27; +
+              createdForPerformingPayment;
+            logForPerformingPayment.L_key &#x3D; &#x27;PO_request_payment&#x27;;
+            logForPerformingPayment.L_data &#x3D; JSON.stringify(uidataForPerformingPayment);
+            await this.logServe.newLog(logForPerformingPayment);
+            // upload payment
+            const presForPerformingPayment &#x3D; await this.orderService.uploadPaymentData(
+              uidataForPerformingPayment.c_order_id,
+              uidataForPerformingPayment.flag
+            );
+            createdForPerformingPayment &#x3D; this.datepipe.transform(
+              new Date(),
+              &#x27;yyyy-MM-dd HH:mm:ss&#x27;
+            );
+            // we are saving the log immediatly after the backend&#x27;s response
+            logForPerformingPayment &#x3D; new Log();
+            logForPerformingPayment.L_created &#x3D; createdForPerformingPayment;
+            logForPerformingPayment.L_id &#x3D; logidForPerformingPayment;
+            logForPerformingPayment.L_msg &#x3D;
+              &#x27; Create Order and perform the payment: payment uploaded successfully to the backend. Backend response: &#x27; +
+              presForPerformingPayment +
+              createdForPerformingPayment +
+              &#x27; ...&#x27;;
+            logForPerformingPayment.L_key &#x3D; &#x27;Backend_Response&#x27;;
+            logForPerformingPayment.L_data &#x3D; presForPerformingPayment;
+            await this.logServe.newLog(logForPerformingPayment);
+
+            if (presForPerformingPayment !&#x3D;&#x3D; undefined &amp;&amp; presForPerformingPayment !&#x3D;&#x3D; null &amp;&amp; presForPerformingPayment) {
+              // here we are updating the payment reference
+              await this.databaseServe.updateOrder(
+                uidataForPerformingPayment.c_order_id,
+                &#x27;Reference&#x27;,
+                paymentnoForPerformingPayment
+              );
+
+              return true;
+            }
+          } else {
+            throw new Error(&#x27;cannot call backend process&#x27;);
+          }
+        }
+      } else {
+        const resForPerformingPaymentElse &#x3D; await this.databaseServe.createPayment(c_payForPerformingPayment);
+        // we are creating the log for indicating that the system has started create the payment locally
+        msgForPerformingPayment &#x3D;
+          &#x27; Perform  payment: Payment created locally successfully &#x27; + createdForPerformingPayment;
+        // saving log
+        logForPerformingPayment.L_key &#x3D; &#x27;P_request&#x27;;
+        logForPerformingPayment.L_data &#x3D; JSON.stringify(c_payForPerformingPayment);
+        logForPerformingPayment.L_msg&#x3D;msgForPerformingPayment;
+        await this.logServe.newLog(logForPerformingPayment);
+        if (resForPerformingPaymentElse.rowsAffected &#x3D;&#x3D;&#x3D; 1) {
+          // we are creating the log for indicating that the system has started uploading the payment to the backend
+          logidForPerformingPayment &#x3D; this.logServe.generateLogId();
+          createdForPerformingPayment &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+          // upload order
+          logForPerformingPayment &#x3D; new Log();
+          logForPerformingPayment.L_created &#x3D; createdForPerformingPayment;
+          logForPerformingPayment.L_id &#x3D; logidForPerformingPayment;
+          logForPerformingPayment.L_msg &#x3D;
+            &#x27;Perform  payment: Start uploading the payment &#x27; + createdForPerformingPayment;
+
+          logForPerformingPayment.L_key &#x3D; &#x27;P_request&#x27;;
+          logForPerformingPayment.L_data &#x3D; JSON.stringify(c_payForPerformingPayment);
+
+          this.logServe.newLog(logForPerformingPayment);
+          const pres &#x3D; await this.orderService.uploadPaymentData(
+            uidataForPerformingPayment.c_order_id,
+            uidataForPerformingPayment.flag
+          );
+          console.log(&#x27;paymentresult&#x27;,pres,&#x27;paymentObject&#x27;,c_payForPerformingPayment);
+
+          if (pres !&#x3D;&#x3D; undefined &amp;&amp; pres !&#x3D;&#x3D; null &amp;&amp; pres) {
+            logidForPerformingPayment &#x3D; this.logServe.generateLogId();
+            createdForPerformingPayment &#x3D; this.datepipe.transform(
+              new Date(),
+              &#x27;yyyy-MM-dd HH:mm:ss&#x27;
+            );
+            // upload order
+            logForPerformingPayment &#x3D; new Log();
+            logForPerformingPayment.L_created &#x3D; createdForPerformingPayment;
+            logForPerformingPayment.L_id &#x3D; logidForPerformingPayment;
+            logForPerformingPayment.L_msg &#x3D;
+              &#x27;Perform  payment: payment uploaded successfully to the backend &#x27; +
+              createdForPerformingPayment +
+              &#x27; . Backend response: &#x27; +
+              pres;
+            logForPerformingPayment.L_key &#x3D; &#x27;P_request_Response&#x27;;
+            logForPerformingPayment.L_data &#x3D; pres;
+
+            await this.logServe.newLog(logForPerformingPayment);
+            resultForPerformingPayment &#x3D; true;
+            return true;
+          } else {
+            logForPerformingPayment &#x3D; new Log();
+            logForPerformingPayment.L_created &#x3D; this.datepipe.transform(
+              new Date(),
+              &#x27;yyyy-MM-dd HH:mm:ss&#x27;
+            );
+            logForPerformingPayment.L_id &#x3D; this.logServe.generateLogId();
+            logForPerformingPayment.L_msg &#x3D;
+              &#x27;   Perform payment: Upload payment failed &#x27; +
+              createdForPerformingPayment +
+              &#x27; . backend response: cannot call backend process&#x27;;
+            logForPerformingPayment.L_key &#x3D; &#x27;P_request&#x27;;
+            logForPerformingPayment.L_data &#x3D; JSON.stringify(c_payForPerformingPayment);
+            this.logServe.newLog(logForPerformingPayment);
+            throw new Error(&#x27;cannot call backend process&#x27;);
+          }
+        } else {
+          logForPerformingPayment &#x3D; new Log();
+          logForPerformingPayment.L_created &#x3D; this.datepipe.transform(
+            new Date(),
+            &#x27;yyyy-MM-dd HH:mm:ss&#x27;
+          );
+          logForPerformingPayment.L_id &#x3D; this.logServe.generateLogId();
+          logForPerformingPayment.L_msg &#x3D;
+            &#x27;   Perform payment: create payment locally failed &#x27; + createdForPerformingPayment;
+
+          logForPerformingPayment.L_key &#x3D; &#x27;P_request&#x27;;
+          logForPerformingPayment.L_data &#x3D; JSON.stringify(c_payForPerformingPayment);
+          await this.logServe.newLog(logForPerformingPayment);
+        }
+      }
+    }
+    return resultForPerformingPayment;
+  }
+
+  async deleteMobilePayment(orderidForDeletingPayment: string) {
+    if (orderidForDeletingPayment &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;provide the order id&#x27;);
+    }
+    if (orderidForDeletingPayment &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw new Error(&#x27;the order id is empty&#x27;);
+    }
+    if (orderidForDeletingPayment &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide the order id&#x27;);
+    }
+    const resForDeletingPayment &#x3D; await this.databaseServe.deletePaymentsByOrderId(orderidForDeletingPayment);
+    if (resForDeletingPayment !&#x3D;&#x3D; null &amp;&amp; resForDeletingPayment !&#x3D;&#x3D; undefined) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+
+  private generatePaymentNo() {
+    const yy &#x3D; this.datepipe.transform(new Date(), &#x27;yy&#x27;);
+    const mm &#x3D; this.datepipe.transform(new Date(), &#x27;M&#x27;);
+    const dd &#x3D; this.datepipe.transform(new Date(), &#x27;d&#x27;);
+    const h &#x3D; this.datepipe.transform(new Date(), &#x27;h&#x27;);
+    const m &#x3D; this.datepipe.transform(new Date(), &#x27;m&#x27;);
+    const s &#x3D; this.datepipe.transform(new Date(), &#x27;s&#x27;);
+    let rand5 &#x3D; &#x27;&#x27;;
+    let rand2 &#x3D; &#x27;&#x27;;
+    const letters &#x3D; &#x27;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#x27;; // include numbers if you want
+    // tslint:disable-next-line: prefer-for-of
+    for (let i &#x3D; 0; i &lt; 5; i++) {
+      rand5 +&#x3D; letters.charAt(Math.floor(Math.random() * letters.length));
+    }
+    for (let i &#x3D; 0; i &lt; 2; i++) {
+      rand2 +&#x3D; letters.charAt(Math.floor(Math.random() * letters.length));
+    }
+    const val &#x3D; rand5 + yy + m + dd + rand2 + s + h;
+    return val;
+  }
+
+  /*++++   getPayment from the backend */
+
+  public async getPayment(referenceForFetchingPayment: string) {
+    // model crud data
+    const cdataForFetchingPayment &#x3D; new ModelCRUDPayCompare();
+    cdataForFetchingPayment.serviceType &#x3D; &#x27;QueryPaymentByReference&#x27;;
+    cdataForFetchingPayment.TableName &#x3D; &#x27;INO_C_Payment&#x27;;
+    cdataForFetchingPayment.Action &#x3D; &#x27;Read&#x27;;
+    const rowForFetchingPayment &#x3D; new DataRow();
+
+    let fieldsForFetchingPayment: Field[] &#x3D; [];
+
+    const onefieldForFetchingPayment &#x3D; new Field();
+
+    onefieldForFetchingPayment[&#x27;@column&#x27;] &#x3D; &#x27;Reference&#x27;;
+    onefieldForFetchingPayment.val &#x3D; referenceForFetchingPayment;
+    fieldsForFetchingPayment.push(onefieldForFetchingPayment);
+    rowForFetchingPayment.field &#x3D; fieldsForFetchingPayment;
+    cdataForFetchingPayment.DataRow &#x3D; rowForFetchingPayment;
+    const lrequestForFetchingPayment &#x3D; await this.databaseServe.getRequestData();
+    // request data
+    const requestdataForFetchingPayment &#x3D; new ModelCRUDRequest();
+    requestdataForFetchingPayment.ModelCRUD &#x3D; cdataForFetchingPayment;
+    requestdataForFetchingPayment.ADLoginRequest &#x3D; lrequestForFetchingPayment[0];
+    // api request data
+    const dataForFetchingPayment &#x3D; new MyData();
+    dataForFetchingPayment.ModelCRUDRequest &#x3D; requestdataForFetchingPayment;
+    const payForFetchingPayment &#x3D; new PayCompare();
+    const produomdataForFetchingPayment &#x3D; await firstValueFrom(
+      this.initdataService.requestData(dataForFetchingPayment)
+    ).catch((err) &#x3D;&gt; this.handleError(err));
+
+    if (
+      produomdataForFetchingPayment !&#x3D;&#x3D; undefined &amp;&amp;
+      produomdataForFetchingPayment !&#x3D;&#x3D; null &amp;&amp;
+      produomdataForFetchingPayment.WindowTabData !&#x3D;&#x3D; undefined &amp;&amp;
+      produomdataForFetchingPayment.WindowTabData !&#x3D;&#x3D; null &amp;&amp;
+      produomdataForFetchingPayment.WindowTabData.DataSet !&#x3D;&#x3D; undefined &amp;&amp;
+      produomdataForFetchingPayment.WindowTabData.DataSet !&#x3D;&#x3D; null &amp;&amp;
+      produomdataForFetchingPayment.WindowTabData.DataSet.DataRow !&#x3D;&#x3D; undefined &amp;&amp;
+      produomdataForFetchingPayment.WindowTabData.DataSet.DataRow !&#x3D;&#x3D; null
+    ) {
+      if (produomdataForFetchingPayment.WindowTabData.DataSet.DataRow.length &gt; 0) {
+        for (const value of produomdataForFetchingPayment.WindowTabData.DataSet.DataRow) {
+          if (
+            value.field !&#x3D;&#x3D; undefined &amp;&amp;
+            value.field !&#x3D;&#x3D; null &amp;&amp;
+            value.field.length &gt; 0
+          ) {
+            for (const valForFetchingPayment of value.field) {
+              if (valForFetchingPayment[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;C_Payment_ID&#x27;) {
+                payForFetchingPayment.C_Payment_ID &#x3D; valForFetchingPayment.val;
+              }
+              if (valForFetchingPayment[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;IEXT_Receipt_Amnt&#x27;) {
+                payForFetchingPayment.IEXT_Receipt_Amnt &#x3D; valForFetchingPayment.val;
+              }
+              if (valForFetchingPayment[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;C_BPartner_ID&#x27;) {
+                payForFetchingPayment.C_BPartner_ID &#x3D; valForFetchingPayment.val;
+              }
+              if (valForFetchingPayment[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;DocumentNo&#x27;) {
+                payForFetchingPayment.DocumentNo &#x3D; valForFetchingPayment.val;
+              }
+              if (valForFetchingPayment[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;Reference&#x27;) {
+                payForFetchingPayment.Reference &#x3D; valForFetchingPayment.val;
+              }
+              if (valForFetchingPayment[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;C_Order_ID&#x27;) {
+                payForFetchingPayment.C_Order_ID &#x3D; valForFetchingPayment.val;
+              }
+              if (valForFetchingPayment[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;PayAmt&#x27;) {
+                payForFetchingPayment.PayAmt &#x3D; valForFetchingPayment.val;
+              }
+            }
+          }
+        }
+      } else {
+        if (
+          produomdataForFetchingPayment.WindowTabData.DataSet.DataRow.field !&#x3D;&#x3D; undefined &amp;&amp;
+          produomdataForFetchingPayment.WindowTabData.DataSet.DataRow.field !&#x3D;&#x3D; null &amp;&amp;
+          produomdataForFetchingPayment.WindowTabData.DataSet.DataRow.field.length &gt; 0
+        ) {
+          for (const valForFetchingPaymentElse of produomdataForFetchingPayment.WindowTabData.DataSet.DataRow.field) {
+            if (valForFetchingPaymentElse[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;C_Payment_ID&#x27;) {
+              payForFetchingPayment.C_Payment_ID &#x3D; valForFetchingPaymentElse.val;
+            }
+            if (valForFetchingPaymentElse[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;IEXT_Receipt_Amnt&#x27;) {
+              payForFetchingPayment.IEXT_Receipt_Amnt &#x3D; valForFetchingPaymentElse.val;
+            }
+
+            if (valForFetchingPaymentElse[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;PayAmt&#x27;) {
+              payForFetchingPayment.PayAmt &#x3D; valForFetchingPaymentElse.val;
+            }
+
+            if (valForFetchingPaymentElse[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;C_BPartner_ID&#x27;) {
+              payForFetchingPayment.C_BPartner_ID &#x3D; valForFetchingPaymentElse.val;
+            }
+
+            if (valForFetchingPaymentElse[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;DocumentNo&#x27;) {
+              payForFetchingPayment.DocumentNo &#x3D; valForFetchingPaymentElse.val;
+            }
+            if (valForFetchingPaymentElse[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;Reference&#x27;) {
+              payForFetchingPayment.Reference &#x3D; valForFetchingPaymentElse.val;
+            }
+            if (valForFetchingPaymentElse[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;C_Order_ID&#x27;) {
+              payForFetchingPayment.C_Order_ID &#x3D; valForFetchingPaymentElse.val;
+            }
+          }
+        }
+      }
+    }
+    return payForFetchingPayment;
+  }
+
+  async performPayMent_(uidataTest: UIMoMoData) {
+    if (
+      uidataTest.c_order_id &#x3D;&#x3D;&#x3D; undefined ||
+      uidataTest.c_order_id &#x3D;&#x3D;&#x3D; null ||
+      uidataTest.c_order_id &#x3D;&#x3D;&#x3D; &#x27;&#x27;
+    ) {
+      throw new Error(&#x27;provide order id&#x27;);
+    }
+
+    if (
+      uidataTest.itext_reciept_amount &#x3D;&#x3D;&#x3D; undefined ||
+      uidataTest.itext_reciept_amount &#x3D;&#x3D;&#x3D; null ||
+      uidataTest.itext_reciept_amount &lt; 0
+    ) {
+      throw new Error(&#x27;provide amount received&#x27;);
+    }
+
+    if (
+      uidataTest.payAmount &#x3D;&#x3D;&#x3D; undefined ||
+      uidataTest.payAmount &#x3D;&#x3D;&#x3D; null ||
+      uidataTest.payAmount &lt; 0
+    ) {
+      throw new Error(&#x27;provide amount&#x27;);
+    }
+    const defautldata &#x3D; await this.deffaultserve.getDefaultSettings();
+    const user &#x3D; await this.databaseServe.getUser();
+    const c_payTest &#x3D; new CPayment();
+    if (defautldata) {
+      let paymentno &#x3D; this.generatePaymentNo();
+      c_payTest.Reference &#x3D; paymentno;
+      c_payTest.AD_Org_ID &#x3D; defautldata.DefaultOrganization;
+      c_payTest.C_BPartner_ID &#x3D; defautldata.DefaultBusinessPartner;
+      c_payTest.C_BankAccount_ID &#x3D; defautldata.DefaultBankAccount;
+      c_payTest.C_Currency_ID &#x3D; defautldata.DefaultCurrency;
+      c_payTest.C_DocType_ID &#x3D; defautldata.DefaultDocType;
+      c_payTest.C_Order_ID &#x3D; uidataTest.c_order_id;
+      c_payTest.Description &#x3D; &#x27;&#x27;;
+      c_payTest.IEXT_Receipt_Amnt &#x3D; uidataTest.itext_reciept_amount;
+      c_payTest.PayAmt &#x3D; uidataTest.payAmount;
+      c_payTest.Payment_Created_Date &#x3D; new Date();
+      c_payTest.Payment_Upload_Date &#x3D; new Date();
+      c_payTest.SalesRep_ID &#x3D; user[0].AD_User_ID;
+      if (uidataTest.flag &#x3D;&#x3D;&#x3D; &#x27;M&#x27;) {
+        // we are checking the phone number when using ipay
+        if (uidataTest.phone &#x3D;&#x3D;&#x3D; undefined) {
+          throw new Error(
+            &#x27;Mobile payment has been set, but the costumer phone number is undefined&#x27;
+          );
+        }
+
+        if (uidataTest.phone &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+          throw new Error(
+            &#x27;Mobile payment has been set, but the costumer phone number is empty&#x27;
+          );
+        }
+
+        if (uidataTest.phone &#x3D;&#x3D;&#x3D; null) {
+          throw new Error(
+            &#x27;Mobile payment has been set, but the costumer phone number is null&#x27;
+          );
+        }
+        c_payTest.Phone &#x3D; uidataTest.phone;
+        c_payTest.TenderType &#x3D; &#x27;M&#x27;;
+      } else if (uidataTest.flag &#x3D;&#x3D;&#x3D; &#x27;P&#x27;) {
+        c_payTest.TenderType &#x3D; defautldata.DefaultTenderType;
+        c_payTest.Phone &#x3D; &#x27;&#x27;;
+      } else {
+        throw new Error(&#x27;invalid tender type&#x27;);
+      }
+      c_payTest.DocumentNO &#x3D; &#x27;&#x27;;
+      if (uidataTest.payType &#x3D;&#x3D;&#x3D; &#x27;PO&#x27;) {
+        const res &#x3D; await this.databaseServe.createPayment(c_payTest);
+        if (res.rowsAffected &#x3D;&#x3D;&#x3D; 1) {
+          // upload order
+          const uores &#x3D; await this.orderService.uploadOrderData(
+            uidataTest.c_order_id
+          );
+          if (uores !&#x3D;&#x3D; undefined &amp;&amp; uores !&#x3D;&#x3D; null &amp;&amp; uores !&#x3D;&#x3D; &#x27;&#x27;) {
+            // upload payment
+            await this.orderService.uploadPaymentData(
+              uidataTest.c_order_id,
+              uidataTest.flag
+            );
+          }
+        }
+      } else {
+        const res &#x3D; await this.databaseServe.createPayment(c_payTest);
+        if (res.rowsAffected &#x3D;&#x3D;&#x3D; 1) {
+          await this.orderService.uploadPaymentData(
+            uidataTest.c_order_id,
+            uidataTest.flag
+          );
+        }
+      }
+    }
+    return c_payTest;
+  }
+
+  public async returnLocalpayment(orderidForfetchingLocalPayment: string) {
+    const paymentForfetchingLocalPayment &#x3D; await this.databaseServe.getPayment(orderidForfetchingLocalPayment, 0);
+    if (paymentForfetchingLocalPayment &#x3D;&#x3D;&#x3D; undefined || paymentForfetchingLocalPayment &#x3D;&#x3D;&#x3D; null || paymentForfetchingLocalPayment.length &#x3D;&#x3D;&#x3D; 0) {
+      throw new Error(&#x27;no order payment info found&#x27;);
+    }
+    return paymentForfetchingLocalPayment;
+  }
+  private handleError(error: any) {
+    throw new Error(error);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PaymentService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

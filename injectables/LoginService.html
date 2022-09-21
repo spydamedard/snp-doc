@@ -1,0 +1,986 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>po-slibrary documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">po-slibrary documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >LoginService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/poslibrary/src/lib/services/login/login.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#authenticateUser" >authenticateUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchQRcodeInfos" >fetchQRcodeInfos</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchQRcodeInfosn" >fetchQRcodeInfosn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleError" >handleError</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#login" >login</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateBackendUrl" >updateBackendUrl</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, db: <a href="../injectables/DatabaseService.html" target="_self">DatabaseService</a>, qrcodelogin: <a href="../injectables/QrcodeLoginService.html" target="_self">QrcodeLoginService</a>, dservice: <a href="../injectables/DataService.html" target="_self">DataService</a>, dfaultS: <a href="../injectables/DefaultService.html" target="_self">DefaultService</a>, datepipe: <a href="https://angular.io/api/common/DatePipe" target="_blank">DatePipe</a>, logServe: <a href="../injectables/LogService.html" target="_self">LogService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">projects/poslibrary/src/lib/services/login/login.service.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatabaseService.html" target="_self" >DatabaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>qrcodelogin</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QrcodeLoginService.html" target="_self" >QrcodeLoginService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dservice</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataService.html" target="_self" >DataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dfaultS</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DefaultService.html" target="_self" >DefaultService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>datepipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/DatePipe" target="_blank" >DatePipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logServe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LogService.html" target="_self" >LogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authenticateUser"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>authenticateUser</b></span>
+                        <a href="#authenticateUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>authenticateUser(lrequest: <a href="../classes/ADLoginRequest.html" target="_self">ADLoginRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/login/login.service.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lrequest</td>
+                                    <td>
+                                                <code><a href="../classes/ADLoginRequest.html" target="_self" >ADLoginRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchQRcodeInfos"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchQRcodeInfos</b></span>
+                        <a href="#fetchQRcodeInfos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchQRcodeInfos()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/login/login.service.ts:202</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>fetchQRcodeInfos: this function is called by the UI for fetching the QRcode information *
+       @params:                                                                         *
+                empty                                                                   *
+     @returned: <Array>                                                                 *</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/CurrentQRcodeSetting.html" target="_self" >Promise&lt;CurrentQRcodeSetting&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchQRcodeInfosn"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchQRcodeInfosn</b></span>
+                        <a href="#fetchQRcodeInfosn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchQRcodeInfosn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="248"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/login/login.service.ts:248</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>fetchQRcodeInfos: this function is called by the test for checking the when there no qrcode info in the system *
+       @params:                                                                         *
+                no params                                                                   *
+     @returned: empty <Array>                                                                 *</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/CurrentQRcodeSetting.html" target="_self" >Promise&lt;CurrentQRcodeSetting&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleError"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleError</b></span>
+                        <a href="#handleError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleError(error: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="295"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/login/login.service.ts:295</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>error</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>login</b></span>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>login(email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, language: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/login/login.service.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>language</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBackendUrl"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateBackendUrl</b></span>
+                        <a href="#updateBackendUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateBackendUrl()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/login/login.service.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { DefaultService } from &#x27;./../default/default.service&#x27;;
+import { DatabaseService } from &#x27;./../database/database.service&#x27;;
+import { Urls } from &#x27;./../../Helpers/Urls&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { ADLoginRequest } from &#x27;../../models/ADLoginRequest&#x27;;
+import { ModelCRUD } from &#x27;../../models/ModelCRUD&#x27;;
+import { ModelCRUDRequest, MyData } from &#x27;../../models/ModelCRUDRequest&#x27;;
+import { catchError } from &#x27;rxjs/operators&#x27;;
+import { firstValueFrom } from &#x27;rxjs&#x27;;
+import { ADUser, CurrentQRcodeSetting } from &#x27;../../models/user&#x27;;
+import { QrcodeLoginService } from &#x27;../qrcodelogin/qrcodelogservice&#x27;;
+import { Checker } from &#x27;../../models/ui-model&#x27;;
+import { DataService } from &#x27;../data/data.service&#x27;;
+import { LogService } from &#x27;../Logs/log.service&#x27;;
+import { DatePipe } from &#x27;@angular/common&#x27;;
+import { Log } from &#x27;../../models/log&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class LoginService {
+  constructor(
+    private http: HttpClient,
+    private db: DatabaseService,
+    private qrcodelogin: QrcodeLoginService,
+    private dservice: DataService,
+    private dfaultS: DefaultService,
+    private datepipe: DatePipe,
+    private logServe: LogService
+  ) {}
+
+  private authenticateUser(lrequest: ADLoginRequest) {
+    // model crud data
+    const cdataForAuthentification &#x3D; new ModelCRUD();
+    cdataForAuthentification.serviceType &#x3D; &#x27;QueryUserData&#x27;;
+    cdataForAuthentification.TableName &#x3D; &#x27;AD_User&#x27;;
+    cdataForAuthentification.Action &#x3D; &#x27;Read&#x27;;
+
+    // request data
+    const requestdataForAuthentification &#x3D; new ModelCRUDRequest();
+    requestdataForAuthentification.ModelCRUD &#x3D; cdataForAuthentification;
+    requestdataForAuthentification.ADLoginRequest &#x3D; lrequest;
+
+    // api request data
+    const dataForAuthentification &#x3D; new MyData();
+    dataForAuthentification.ModelCRUDRequest &#x3D; requestdataForAuthentification;
+
+    // make api request to login and get user data
+    return this.http
+      .post&lt;any&gt;(Urls.apiUrl, dataForAuthentification)
+      .pipe(catchError(this.handleError));
+  }
+
+  async updateBackendUrl(): Promise&lt;boolean&gt; {
+    if (this.db.issqlite) {
+      const user_settingForUpdatingBackendUrl &#x3D; await this.qrcodelogin.getInitialUserSettings();
+      if (user_settingForUpdatingBackendUrl !&#x3D;&#x3D; undefined &amp;&amp; user_settingForUpdatingBackendUrl !&#x3D;&#x3D; null) {
+        Urls.apiUrl &#x3D;
+          user_settingForUpdatingBackendUrl.BACKENDURL +
+          &#x27;/&#x27; +
+          &#x27;ADInterface/services/rest/model_adservice/query_data&#x27;;
+        Urls.apiUrl2 &#x3D;
+          user_settingForUpdatingBackendUrl.BACKENDURL +
+          &#x27;/&#x27; +
+          &#x27;ADInterface/services/rest/model_adservice&#x27;;
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+
+  // login
+  async login(email: string, password: string, language: string): Promise&lt;any&gt; {
+    if (email &#x3D;&#x3D;&#x3D; undefined || email &#x3D;&#x3D;&#x3D; null || email.trim() &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw &#x27;provide username&#x27;;
+    } else if (
+      password &#x3D;&#x3D;&#x3D; undefined ||
+      password &#x3D;&#x3D;&#x3D; null ||
+      password.trim() &#x3D;&#x3D;&#x3D; &#x27;&#x27;
+    ) {
+      throw &#x27;provide password&#x27;;
+    } else if (
+      language &#x3D;&#x3D;&#x3D; undefined ||
+      language &#x3D;&#x3D;&#x3D; null ||
+      language.trim() &#x3D;&#x3D;&#x3D; &#x27;&#x27;
+    ) {
+      throw &#x27;provide language&#x27;;
+    } else {
+      //initials user setting
+      const user_settingForMakingAuthentification &#x3D; await this.qrcodelogin.getInitialUserSettingsLogin();
+      // we are creatiing the log for showing that the authentification has started - at this level the system is fetching the user default setting
+      let createdForMakingAuthentification &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+      let logForMakingAuthentification &#x3D; new Log();
+      logForMakingAuthentification.L_created &#x3D; createdForMakingAuthentification;
+      logForMakingAuthentification.L_id &#x3D; this.logServe.generateLogId();
+      logForMakingAuthentification.L_msg &#x3D;&#x27;   Login: start fetching initial user settings &#x27; + createdForMakingAuthentification + &#x27; ...&#x27;;
+      logForMakingAuthentification.L_key &#x3D; &#x27;user_initial_settings&#x27;;
+      logForMakingAuthentification.L_data &#x3D; JSON.stringify(user_settingForMakingAuthentification);
+      await this.logServe.newLog(logForMakingAuthentification);
+      // user data
+      if (user_settingForMakingAuthentification !&#x3D;&#x3D; undefined &amp;&amp; user_settingForMakingAuthentification !&#x3D;&#x3D; null) {
+        // set backend url
+        await this.updateBackendUrl();
+        const lrequestForMakingAuthentification &#x3D; new ADLoginRequest();
+        lrequestForMakingAuthentification.user &#x3D; email;
+        lrequestForMakingAuthentification.pass &#x3D; password;
+        lrequestForMakingAuthentification.lang &#x3D; language;
+        lrequestForMakingAuthentification.ClientID &#x3D; user_settingForMakingAuthentification.CLIENTID;
+        lrequestForMakingAuthentification.RoleID &#x3D; user_settingForMakingAuthentification.ROLEID;
+        lrequestForMakingAuthentification.OrgID &#x3D; user_settingForMakingAuthentification.ORGID;
+        lrequestForMakingAuthentification.WarehouseID &#x3D; user_settingForMakingAuthentification.WAREHOUSEID;
+        lrequestForMakingAuthentification.stage &#x3D; user_settingForMakingAuthentification.STAGE;
+        // we are saving the log for indicating that at this level the system has started call the backend authentification function
+        createdForMakingAuthentification &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+        logForMakingAuthentification &#x3D; new Log();
+        logForMakingAuthentification.L_created &#x3D; createdForMakingAuthentification;
+        logForMakingAuthentification.L_id &#x3D; this.logServe.generateLogId();
+        logForMakingAuthentification.L_msg &#x3D;
+          &#x27;   Login: start authenticate the user from the backend &#x27; +
+          createdForMakingAuthentification +
+          &#x27; ...&#x27;;
+        logForMakingAuthentification.L_key &#x3D; &#x27;login_request&#x27;;
+        logForMakingAuthentification.L_data &#x3D; JSON.stringify(lrequestForMakingAuthentification);
+        await this.logServe.newLog(logForMakingAuthentification);
+        const dataForMakingAuthentification &#x3D; await firstValueFrom(
+          this.authenticateUser(lrequestForMakingAuthentification)
+        ).catch((err) &#x3D;&gt; this.handleError(err));
+
+        // we are saving the log immediatly after the backend&#x27;s response
+
+        createdForMakingAuthentification &#x3D; this.datepipe.transform(new Date(), &#x27;yyyy-MM-dd HH:mm:ss&#x27;);
+        logForMakingAuthentification &#x3D; new Log();
+        logForMakingAuthentification.L_created &#x3D; createdForMakingAuthentification;
+        logForMakingAuthentification.L_id &#x3D; this.logServe.generateLogId();
+        logForMakingAuthentification.L_msg &#x3D;
+          &#x27;   Login: user  authentification from the backend &#x27; +
+          createdForMakingAuthentification;
+        logForMakingAuthentification.L_key &#x3D; &#x27;login_request&#x27;;
+        logForMakingAuthentification.L_data &#x3D; JSON.stringify(dataForMakingAuthentification);
+
+        await this.logServe.newLog(logForMakingAuthentification);
+        if (
+          dataForMakingAuthentification !&#x3D;&#x3D; undefined &amp;&amp;
+          dataForMakingAuthentification !&#x3D;&#x3D; null &amp;&amp;
+          dataForMakingAuthentification.WindowTabData !&#x3D;&#x3D; undefined &amp;&amp;
+          dataForMakingAuthentification.WindowTabData !&#x3D;&#x3D; null &amp;&amp;
+          dataForMakingAuthentification.WindowTabData.DataSet !&#x3D;&#x3D; undefined &amp;&amp;
+          dataForMakingAuthentification.WindowTabData.DataSet !&#x3D;&#x3D; null &amp;&amp;
+          dataForMakingAuthentification.WindowTabData.DataSet.DataRow !&#x3D;&#x3D; undefined &amp;&amp;
+          dataForMakingAuthentification.WindowTabData.DataSet.DataRow !&#x3D;&#x3D; null &amp;&amp;
+          dataForMakingAuthentification.WindowTabData.DataSet.DataRow.field !&#x3D;&#x3D; undefined &amp;&amp;
+          dataForMakingAuthentification.WindowTabData.DataSet.DataRow.field !&#x3D;&#x3D; null &amp;&amp;
+          dataForMakingAuthentification.WindowTabData.DataSet.DataRow.field.length &gt; 0
+        ) {
+          const userForMakingAuthentification &#x3D; new ADUser();
+
+          for (const valForMakingAuthentification of dataForMakingAuthentification.WindowTabData.DataSet.DataRow.field) {
+            if (valForMakingAuthentification[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;AD_User_ID&#x27;) {
+              userForMakingAuthentification.AD_User_ID &#x3D; valForMakingAuthentification.val;
+            }
+            if (valForMakingAuthentification[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;Name&#x27;) {
+              userForMakingAuthentification.Name &#x3D; valForMakingAuthentification.val;
+            }
+            if (valForMakingAuthentification[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;C_BPartner_ID&#x27;) {
+              userForMakingAuthentification.C_BPartner_ID &#x3D; valForMakingAuthentification.val;
+            }
+          }
+          // delete request data locally
+          await this.db.deleteRequestData();
+          // save request data locally
+          await this.db.saveRequestData(lrequestForMakingAuthentification);
+          // delete user data locally
+          await this.db.deleteUser();
+          // save user data locally
+          await this.db.saveUser(userForMakingAuthentification);
+          // delete current checker setting
+          await this.db.deleteOrgWarehouseChecker(123);
+          // create new default checker settings
+          const org_and_warehouse_checker &#x3D; new Checker();
+          org_and_warehouse_checker.id &#x3D; 123;
+          org_and_warehouse_checker.org &#x3D; 1;
+          org_and_warehouse_checker.warehouse &#x3D; 1;
+          await this.db.CreateOrg_WareHouse_Checker(org_and_warehouse_checker);
+        }
+        return Promise.resolve(dataForMakingAuthentification);
+      } else {
+        throw new Error(&#x27;default data not available&#x27;);
+      }
+    }
+  }
+
+  /******************************************************************************************                                                          *
+   * fetchQRcodeInfos: this function is called by the UI for fetching the QRcode information *
+   *        @params:                                                                         *
+   *                 empty                                                                   *
+   *      @returned: &lt;Array&gt;                                                                 *
+   ****************************************************************************************/
+  async fetchQRcodeInfos(): Promise&lt;CurrentQRcodeSetting&gt; {
+    //qrcodesetting instantiation
+    let qrcodesettingVariableForCheckingQrInfoAvailability &#x3D; new CurrentQRcodeSetting();
+    // current organization and warehouse names
+    const OrgWarHVariableForCheckingQrInfoAvailability &#x3D; await this.dservice
+      .getCurrentOrgAndWarehouse()
+      .catch((error) &#x3D;&gt; {
+        this.handleError(error);
+      });
+    // default settings
+    const dsettingVariableForCheckingQrInfoAvailability &#x3D; await this.dfaultS.getDefaultSettings();
+    // qrcode infos
+    const dqrVariableForCheckingQrInfoAvailability &#x3D; await this.qrcodelogin.getInitialUserSettings();
+    // request data
+    const lrequestVariableForCheckingQrInfoAvailability &#x3D; await this.db.getRequestData();
+    if (
+      OrgWarHVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      OrgWarHVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; undefined &amp;&amp;
+      dsettingVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      dsettingVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; undefined &amp;&amp;
+      dqrVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      dqrVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; undefined &amp;&amp;
+      lrequestVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      lrequestVariableForCheckingQrInfoAvailability !&#x3D;&#x3D; undefined
+    ) {
+      if (OrgWarHVariableForCheckingQrInfoAvailability.org !&#x3D;&#x3D; undefined &amp;&amp; OrgWarHVariableForCheckingQrInfoAvailability.warehouse !&#x3D;&#x3D; undefined) {
+        qrcodesettingVariableForCheckingQrInfoAvailability.orgid &#x3D; dqrVariableForCheckingQrInfoAvailability.ORGID;
+        qrcodesettingVariableForCheckingQrInfoAvailability.warehouseid &#x3D; dqrVariableForCheckingQrInfoAvailability.WAREHOUSEID;
+        qrcodesettingVariableForCheckingQrInfoAvailability.org &#x3D; OrgWarHVariableForCheckingQrInfoAvailability.org;
+        qrcodesettingVariableForCheckingQrInfoAvailability.warehouse &#x3D; OrgWarHVariableForCheckingQrInfoAvailability.warehouse;
+        qrcodesettingVariableForCheckingQrInfoAvailability.client_name &#x3D; dsettingVariableForCheckingQrInfoAvailability.Name;
+        qrcodesettingVariableForCheckingQrInfoAvailability.clientid &#x3D; dqrVariableForCheckingQrInfoAvailability.CLIENTID;
+        qrcodesettingVariableForCheckingQrInfoAvailability.weburl &#x3D; dsettingVariableForCheckingQrInfoAvailability.URL;
+        qrcodesettingVariableForCheckingQrInfoAvailability.user_name &#x3D; lrequestVariableForCheckingQrInfoAvailability[0].user;
+      }
+    }
+
+    return qrcodesettingVariableForCheckingQrInfoAvailability;
+  }
+
+  /******************************************************************************************                                                          *
+   * fetchQRcodeInfos: this function is called by the test for checking the when there no qrcode info in the system *
+   *        @params:                                                                         *
+   *                 no params                                                                   *
+   *      @returned: empty &lt;Array&gt;                                                                 *
+   ****************************************************************************************/
+  async fetchQRcodeInfosn(): Promise&lt;CurrentQRcodeSetting&gt; {
+    //qrcodesetting instantiation
+    let qrcodesettingVariableForCheckingQrNonInfoAvailability &#x3D; new CurrentQRcodeSetting();
+
+    // current organization and warehouse names
+    await this.dservice
+      .deleteCurrentOrgAndWarehouse()
+      .catch((error) &#x3D;&gt; {
+        this.handleError(error);
+      });
+    // current organization and warehouse names
+    const OrgWarHVariableForCheckingQrNonInfoAvailability &#x3D; await this.dservice
+      .getCurrentOrgAndWarehouse()
+      .catch((error) &#x3D;&gt; {
+        this.handleError(error);
+      });
+    // default settings
+    const dsettingVariableForCheckingQrNonInfoAvailability &#x3D; await this.dfaultS.getDefaultSettings();
+    // qrcode infos
+    const dqrVariableForCheckingQrNonInfoAvailability &#x3D; await this.qrcodelogin.getInitialUserSettings();
+    // request data
+    const lrequestVariableForCheckingQrNonInfoAvailability &#x3D; await this.db.getRequestData();
+    if (
+      OrgWarHVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      OrgWarHVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; undefined &amp;&amp;
+      dsettingVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      dsettingVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; undefined &amp;&amp;
+      dqrVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      dqrVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; undefined &amp;&amp;
+      lrequestVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; null &amp;&amp;
+      lrequestVariableForCheckingQrNonInfoAvailability !&#x3D;&#x3D; undefined
+    ) {
+      if (OrgWarHVariableForCheckingQrNonInfoAvailability.org !&#x3D;&#x3D; undefined &amp;&amp; OrgWarHVariableForCheckingQrNonInfoAvailability.warehouse !&#x3D;&#x3D; undefined) {
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.orgid &#x3D; dqrVariableForCheckingQrNonInfoAvailability.ORGID;
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.warehouseid &#x3D; dqrVariableForCheckingQrNonInfoAvailability.WAREHOUSEID;
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.org &#x3D; OrgWarHVariableForCheckingQrNonInfoAvailability.org;
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.warehouse &#x3D; OrgWarHVariableForCheckingQrNonInfoAvailability.warehouse;
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.client_name &#x3D; dsettingVariableForCheckingQrNonInfoAvailability.Name;
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.weburl &#x3D; dqrVariableForCheckingQrNonInfoAvailability.BACKENDURL;
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.user_name &#x3D; dsettingVariableForCheckingQrNonInfoAvailability.AD_User_Name;
+        qrcodesettingVariableForCheckingQrNonInfoAvailability.userid &#x3D; &#x27;&#x27; + dsettingVariableForCheckingQrNonInfoAvailability.AD_User_ID;
+      }
+    }
+
+    return qrcodesettingVariableForCheckingQrNonInfoAvailability;
+  }
+
+  private handleError(error: any) {
+    return error;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'LoginService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

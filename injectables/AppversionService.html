@@ -1,0 +1,1170 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>po-slibrary documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">po-slibrary documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >AppversionService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Provider for super difficult math operations</p>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkAppVersionStatus" >checkAppVersionStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkerOfAppVersionParams" >checkerOfAppVersionParams</a>
+                            </li>
+                            <li>
+                                <a href="#checkerSaveAppVersion" >checkerSaveAppVersion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#clearAPPversion" >clearAPPversion</a>
+                            </li>
+                            <li>
+                                <a href="#delay" >delay</a>
+                            </li>
+                            <li>
+                                <a href="#getAppversionAfterBackendResponse" >getAppversionAfterBackendResponse</a>
+                            </li>
+                            <li>
+                                <a href="#getAppversionObjectBasedOnBackendData" >getAppversionObjectBasedOnBackendData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleError" >handleError</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveAppVersionStatus" >saveAppVersionStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveLastTimeForTest" >saveLastTimeForTest</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(databaseServe: <a href="../injectables/DatabaseService.html" target="_self">DatabaseService</a>, datepipe: <a href="https://angular.io/api/common/DatePipe" target="_blank">DatePipe</a>, initdataService: <a href="../injectables/InitDataService.html" target="_self">InitDataService</a>, DataServe: <a href="../injectables/DataService.html" target="_self">DataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>databaseServe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatabaseService.html" target="_self" >DatabaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>datepipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/DatePipe" target="_blank" >DatePipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>initdataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InitDataService.html" target="_self" >InitDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>DataServe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataService.html" target="_self" >DataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkAppVersionStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkAppVersionStatus</b></span>
+                        <a href="#checkAppVersionStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkAppVersionStatus(appversion: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>appversion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkerOfAppVersionParams"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkerOfAppVersionParams</b></span>
+                        <a href="#checkerOfAppVersionParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkerOfAppVersionParams(appversion: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:183</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>appversion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkerSaveAppVersion"></a>
+                    <span class="name">
+                        <span ><b>checkerSaveAppVersion</b></span>
+                        <a href="#checkerSaveAppVersion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkerSaveAppVersion(backstatus: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>backstatus</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearAPPversion"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>clearAPPversion</b></span>
+                        <a href="#clearAPPversion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>clearAPPversion()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delay"></a>
+                    <span class="name">
+                        <span ><b>delay</b></span>
+                        <a href="#delay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delay(ms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ms</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppversionAfterBackendResponse"></a>
+                    <span class="name">
+                        <span ><b>getAppversionAfterBackendResponse</b></span>
+                        <a href="#getAppversionAfterBackendResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAppversionAfterBackendResponse(appversionData: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>appversionData</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppversionObjectBasedOnBackendData"></a>
+                    <span class="name">
+                        <span ><b>getAppversionObjectBasedOnBackendData</b></span>
+                        <a href="#getAppversionObjectBasedOnBackendData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAppversionObjectBasedOnBackendData(backendResult: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>backendResult</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleError"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleError</b></span>
+                        <a href="#handleError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleError(error: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="215"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:215</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>error</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveAppVersionStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>saveAppVersionStatus</b></span>
+                        <a href="#saveAppVersionStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveAppVersionStatus(appversion: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>get app version from the backend</p>
+<p>Simply call it with the version that you want to check:
+saveAppVersionStatus(1.2-34)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>appversion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;AppVersionUIResponse&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The the current version information</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveLastTimeForTest"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>saveLastTimeForTest</b></span>
+                        <a href="#saveLastTimeForTest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveLastTimeForTest()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="204"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/AppVersion/appversion.service.ts:204</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { DatabaseService } from &#x27;../database/database.service&#x27;;
+import { DataService } from &#x27;./../data/data.service&#x27;;
+import {
+  AppVersion,
+  AppVersionUIResponse,
+  LastTimeFromTheBackend,
+} from &#x27;./../../models/ui-model&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { ModelCRUDPayCompare } from &#x27;../../models/ModelCRUD&#x27;;
+import { firstValueFrom } from &#x27;rxjs&#x27;;
+import { ModelCRUDRequest, MyData } from &#x27;../../models/ModelCRUDRequest&#x27;;
+import { DataRow, Field } from &#x27;../../models/ResponseData&#x27;;
+import { InitDataService } from &#x27;../web-services/init-data-service/init-data.service&#x27;;
+import { DatePipe } from &#x27;@angular/common&#x27;;
+/**
+  Provider for super difficult math operations
+*/
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class AppversionService {
+  constructor(
+    private databaseServe: DatabaseService,
+    private datepipe: DatePipe,
+    private initdataService: InitDataService,
+    private DataServe: DataService
+  ) {}
+
+/**
+* get app version from the backend
+*
+* @getAppversionFromtheBackend
+* Simply call it with the version that you want to check:
+* saveAppVersionStatus(1.2-34)
+* @param {string} version First number
+* @returns The the current version information
+*/
+
+  public async saveAppVersionStatus(
+    appversion: string
+  ): Promise&lt;AppVersionUIResponse&gt; {
+    // model crud data
+    const cdata &#x3D; new ModelCRUDPayCompare();
+    cdata.serviceType &#x3D; &#x27;QueryMobileVersionByVersion&#x27;;
+    cdata.TableName &#x3D; &#x27;iNO_MobileVersion&#x27;;
+    cdata.Action &#x3D; &#x27;Read&#x27;;
+    const row &#x3D; new DataRow();
+    let fields: Field[] &#x3D; [];
+    const onefield &#x3D; new Field();
+    onefield[&#x27;@column&#x27;] &#x3D; &#x27;Version&#x27;;
+    onefield.val &#x3D; appversion;
+    fields.push(onefield);
+    row.field &#x3D; fields;
+    cdata.DataRow &#x3D; row;
+    const lrequest &#x3D; await this.databaseServe.getRequestData();
+    // request data
+    const requestdata &#x3D; new ModelCRUDRequest();
+    requestdata.ModelCRUD &#x3D; cdata;
+    requestdata.ADLoginRequest &#x3D; lrequest[0];
+    // api request data
+    const data &#x3D; new MyData();
+    data.ModelCRUDRequest &#x3D; requestdata;
+    const UIRESP &#x3D; new AppVersionUIResponse();
+    const appversionData &#x3D; await firstValueFrom(
+      this.initdataService.requestData(data)
+    ).catch((err) &#x3D;&gt; this.handleError(err));
+    let backendResponse: any &#x3D; null;
+    backendResponse &#x3D; this.getAppversionAfterBackendResponse(appversionData);
+    this.checkerSaveAppVersion(backendResponse);
+    const finalVersionToSave&#x3D;this.getAppversionObjectBasedOnBackendData(backendResponse);
+    await this.databaseServe.CreateNewAppVersion(finalVersionToSave);
+    const lastTime &#x3D; new LastTimeFromTheBackend();
+    lastTime.lasttimeBackendCheckAppVersion &#x3D; this.datepipe.transform(
+      new Date(),
+      &#x27;yyyy-MM-dd HH:mm:ss&#x27;
+    );
+    await this.databaseServe.CreateNewLastTimeBackendAppVersionCheck(lastTime);
+    UIRESP.Valid &#x3D; finalVersionToSave.Approved;
+    UIRESP.Comment &#x3D; finalVersionToSave.Comment;
+    return UIRESP;
+  }
+
+// set appversion object to save
+getAppversionObjectBasedOnBackendData(backendResult:any)
+{
+  let version &#x3D; new AppVersion();
+  version.Comment &#x3D; &#x27;&#x27;;
+  version.App_Version &#x3D; &#x27;&#x27;;
+  version.Approved &#x3D; &#x27;&#x27;;
+  for (const val of backendResult) {
+    const previewApproved &#x3D; version.Approved;
+    const previewVersion &#x3D; version.App_Version;
+    const previewComment &#x3D; version.Comment;
+    version.Approved &#x3D;
+      val[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;IsApproved&#x27; ? val.val : previewApproved;
+    version.App_Version &#x3D;
+      val[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;Version&#x27; ? val.val : previewVersion;
+    if (val[&#x27;@column&#x27;] &#x3D;&#x3D;&#x3D; &#x27;Comments&#x27;) {
+      version.Comment &#x3D; !JSON.stringify(val.val).includes(&#x27;@nil&#x27;)
+        ? val.val
+        : previewComment;
+    }
+  }
+  return version;
+}
+// this function is used for get the appversion from the backend&#x27;s response data
+  getAppversionAfterBackendResponse(appversionData:any)
+  {
+    let finalDataAfterCheck &#x3D; null;
+    if (
+      appversionData !&#x3D;&#x3D; undefined &amp;&amp;
+      appversionData !&#x3D;&#x3D; null &amp;&amp;
+      appversionData.WindowTabData !&#x3D;&#x3D; undefined &amp;&amp;
+      appversionData.WindowTabData !&#x3D;&#x3D; null &amp;&amp;
+      appversionData.WindowTabData.DataSet !&#x3D;&#x3D; undefined &amp;&amp;
+      appversionData.WindowTabData.DataSet !&#x3D;&#x3D; null &amp;&amp;
+      appversionData.WindowTabData.DataSet.DataRow !&#x3D;&#x3D; undefined &amp;&amp;
+      appversionData.WindowTabData.DataSet.DataRow !&#x3D;&#x3D; null
+    ) {
+      if (appversionData.WindowTabData.DataSet.DataRow.length &gt; 0) {
+        finalDataAfterCheck &#x3D; appversionData.WindowTabData.DataSet.DataRow;
+      } else {
+        if (
+          appversionData.WindowTabData.DataSet.DataRow.field !&#x3D;&#x3D; undefined &amp;&amp;
+          appversionData.WindowTabData.DataSet.DataRow.field !&#x3D;&#x3D; null &amp;&amp;
+          appversionData.WindowTabData.DataSet.DataRow.field.length &gt; 0
+        ) {
+          finalDataAfterCheck &#x3D; appversionData.WindowTabData.DataSet.DataRow.field;
+        }
+      }
+
+    }
+    return finalDataAfterCheck;
+  }
+
+  checkerSaveAppVersion(backstatus: string) {
+    if (backstatus &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;The version does not exists in the system&#x27;);
+    }
+  }
+
+  delay(ms: number) {
+    return new Promise((resolve) &#x3D;&gt; setTimeout(resolve, ms));
+  }
+  // check app version status
+
+  async checkAppVersionStatus(appversion: string) {
+    await this.checkerOfAppVersionParams(appversion);
+    let UIRESP &#x3D; new AppVersionUIResponse();
+    // by default, we are supposing that all the versions are allowed
+    UIRESP.Valid &#x3D; &#x27;Y&#x27;;
+    UIRESP.Comment &#x3D; &#x27;All versions are allowed&#x27;;
+    // we are checking the version from the backend
+    await this.saveAppVersionStatus(appversion);
+    await this.DataServe.getAndSaveSettingsData();
+    // we are checking the app version strategy
+    const versionStrategyFinalFetch &#x3D;
+      await this.databaseServe.getAppVersionStrategy();
+    // we can continue if the time is not yet reached 8 hours after the last check from the backend
+    if (
+      versionStrategyFinalFetch !&#x3D;&#x3D; null &amp;&amp;
+      versionStrategyFinalFetch[0].IsActive &#x3D;&#x3D;&#x3D; &#x27;Y&#x27;
+    ) {
+      const versionFinal &#x3D; await this.databaseServe
+        .getAppVersion()
+        .catch((error) &#x3D;&gt; {
+          this.handleError(error);
+        });
+      if (
+        versionFinal !&#x3D;&#x3D; undefined &amp;&amp;
+        versionFinal !&#x3D;&#x3D; null &amp;&amp;
+        versionFinal.length &gt; 0
+      ) {
+
+        UIRESP.Valid &#x3D; versionFinal[0].Approved;
+        UIRESP.Comment &#x3D; versionFinal[0].Comment;
+      }
+    }
+    return UIRESP;
+  }
+
+  async checkerOfAppVersionParams(appversion: string) {
+    if (!this.databaseServe.issqlite) {
+      throw new Error(&#x27;Could not connect to sqlite&#x27;);
+    }
+    if (appversion &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;The app version is undefined&#x27;);
+    }
+    if (appversion &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw new Error(&#x27;The app version is empty&#x27;);
+    }
+    if (appversion &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;The app version is null&#x27;);
+    }
+  }
+
+  async clearAPPversion() {
+    await this.databaseServe.DeleteAppVersionAndAppStrategy();
+    await this.databaseServe.DeleteAppVersion();
+    await this.databaseServe.DeleteAppVersionLastBackendDownload();
+  }
+
+  async saveLastTimeForTest() {
+    const lastTime &#x3D; new LastTimeFromTheBackend();
+    const hours &#x3D; new Date().getHours() / 1000;
+    const vdate &#x3D; new Date().setHours(hours);
+    lastTime.lasttimeBackendCheckAppVersion &#x3D; this.datepipe.transform(
+      vdate,
+      &#x27;yyyy-MM-dd HH:mm:ss&#x27;
+    );
+    await this.databaseServe.CreateNewLastTimeBackendAppVersionCheck(lastTime);
+  }
+
+  private handleError(error: any) {
+    return error;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppversionService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

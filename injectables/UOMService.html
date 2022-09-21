@@ -1,0 +1,917 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>po-slibrary documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">po-slibrary documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >UOMService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/poslibrary/src/lib/services/UOM/UOMservice.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkParametersBeforeInit" >checkParametersBeforeInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUnitOfMeasureConversions" >getUnitOfMeasureConversions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#returnProductUOM" >returnProductUOM</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateOrderLineElements" >updateOrderLineElements</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateUOM" >updateUOM</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(db: <a href="../injectables/DatabaseService.html" target="_self">DatabaseService</a>, order: <a href="../injectables/OrderService.html" target="_self">OrderService</a>, defaultserv: <a href="../injectables/DefaultService.html" target="_self">DefaultService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">projects/poslibrary/src/lib/services/UOM/UOMservice.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatabaseService.html" target="_self" >DatabaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>order</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OrderService.html" target="_self" >OrderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>defaultserv</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DefaultService.html" target="_self" >DefaultService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkParametersBeforeInit"></a>
+                    <span class="name">
+                        <span ><b>checkParametersBeforeInit</b></span>
+                        <a href="#checkParametersBeforeInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkParametersBeforeInit(orderidChecker: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, productIdChecker: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/UOM/UOMservice.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderidChecker</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>productIdChecker</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUnitOfMeasureConversions"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUnitOfMeasureConversions</b></span>
+                        <a href="#getUnitOfMeasureConversions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUnitOfMeasureConversions(productIdForFetchingUnitOfMeasureConversion: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/UOM/UOMservice.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>productIdForFetchingUnitOfMeasureConversion</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="returnProductUOM"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>returnProductUOM</b></span>
+                        <a href="#returnProductUOM"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>returnProductUOM(productid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/UOM/UOMservice.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>productid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateOrderLineElements"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateOrderLineElements</b></span>
+                        <a href="#updateOrderLineElements"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateOrderLineElements(orderidParameterForUpdatingOrderline: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, order_line_idParameterForUpdatingOrderline: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, uomidParameterForUpdatingOrderline: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, netpriceParameterForUpdatingOrderline: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, priceParameterForUpdatingOrderline: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, new_grand_totalParameterForUpdatingOrderline: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/UOM/UOMservice.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderidParameterForUpdatingOrderline</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>order_line_idParameterForUpdatingOrderline</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uomidParameterForUpdatingOrderline</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>netpriceParameterForUpdatingOrderline</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>priceParameterForUpdatingOrderline</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>new_grand_totalParameterForUpdatingOrderline</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUOM"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateUOM</b></span>
+                        <a href="#updateUOM"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateUOM(orderid: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, productId: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/UOM/UOMservice.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderid</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>productId</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { OrderService } from &#x27;./../order/order.service&#x27;;
+import { DefaultService } from &#x27;../default/default.service&#x27;;
+import { DatabaseService } from &#x27;../database/database.service&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { UOMConversion } from &#x27;../../models/ui-model&#x27;;
+import { MProduct } from &#x27;../../models/product-data&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class UOMService {
+  constructor(
+    private db: DatabaseService,
+    private order: OrderService,
+    private defaultserv: DefaultService
+  ) {}
+
+  /* ****************************************************************************
+    updateUOM: this function updates the order line product unity of mesure (UOM)
+    @params
+        orderid: the current order
+      productid: the product that we want to change the unity of mesure
+
+    @return
+          Promise &lt;boolean&gt;
+  *******************************************************************************/
+  async updateUOM(orderid: any, productId: any) {
+    this.checkParametersBeforeInit(orderid,productId);
+    // initialization of UOM
+    let uomidForChangingOrderLineUnitOfMeasure &#x3D; 0;
+    // initialization of his devideRate
+    let uomDivideRateForChangingOrderLineUnitOfMeasure &#x3D; 0;
+    //here we get the current order line by using the order id and the product id
+    const lineForChangingOrderLineUnitOfMeasure &#x3D; await this.order.getOrderLine(orderid, &#x27;&#x27;, productId);
+    //unit of measure conversions
+    const uomConversionsForChangingOrderLineUnitOfMeasure &#x3D; await this.getUnitOfMeasureConversions(productId);
+    // initialization of differents vaiables
+    let firstItemForChangingOrderLineUnitOfMeasure &#x3D; 0;
+    let kForChangingOrderLineUnitOfMeasure &#x3D; 0;
+    let seeForChangingOrderLineUnitOfMeasure &#x3D; false;
+    while (kForChangingOrderLineUnitOfMeasure &lt;&#x3D; uomConversionsForChangingOrderLineUnitOfMeasure.length &amp;&amp; !seeForChangingOrderLineUnitOfMeasure) {
+      if (
+        uomConversionsForChangingOrderLineUnitOfMeasure[kForChangingOrderLineUnitOfMeasure].C_UOM_To_ID &#x3D;&#x3D;&#x3D; lineForChangingOrderLineUnitOfMeasure[0].C_UOM_ID &amp;&amp;
+        uomConversionsForChangingOrderLineUnitOfMeasure[kForChangingOrderLineUnitOfMeasure + 1] !&#x3D;&#x3D; undefined
+      ) {
+        uomidForChangingOrderLineUnitOfMeasure &#x3D; uomConversionsForChangingOrderLineUnitOfMeasure[kForChangingOrderLineUnitOfMeasure + 1].C_UOM_To_ID;
+        seeForChangingOrderLineUnitOfMeasure &#x3D; true;
+        uomDivideRateForChangingOrderLineUnitOfMeasure &#x3D; uomConversionsForChangingOrderLineUnitOfMeasure[kForChangingOrderLineUnitOfMeasure + 1].DivideRate;
+      } else if (uomConversionsForChangingOrderLineUnitOfMeasure[kForChangingOrderLineUnitOfMeasure + 1] &#x3D;&#x3D;&#x3D; undefined) {
+        uomidForChangingOrderLineUnitOfMeasure &#x3D; firstItemForChangingOrderLineUnitOfMeasure;
+        seeForChangingOrderLineUnitOfMeasure &#x3D; true;
+      }
+      // we save the first UOM conversion item
+      if (kForChangingOrderLineUnitOfMeasure &#x3D;&#x3D;&#x3D; 0) {
+        firstItemForChangingOrderLineUnitOfMeasure &#x3D; uomConversionsForChangingOrderLineUnitOfMeasure[kForChangingOrderLineUnitOfMeasure].C_UOM_To_ID;
+      }
+      kForChangingOrderLineUnitOfMeasure++;
+    }
+
+    if ((lineForChangingOrderLineUnitOfMeasure &#x3D;&#x3D;&#x3D; undefined &amp;&amp; lineForChangingOrderLineUnitOfMeasure &#x3D;&#x3D;&#x3D; null) || lineForChangingOrderLineUnitOfMeasure.length &#x3D;&#x3D;&#x3D; 0) {
+      throw new Error(&#x27;The order line is not defined&#x27;);
+    }
+    // get settings
+    const settingForChangingOrderLineUnitOfMeasure &#x3D; await this.defaultserv.getDefaultSettings();
+    // default price list
+    const pricelistidForChangingOrderLineUnitOfMeasure &#x3D; settingForChangingOrderLineUnitOfMeasure.DefaultPriceList;
+    const verForChangingOrderLineUnitOfMeasure &#x3D; await this.db.getPriceListVersion(pricelistidForChangingOrderLineUnitOfMeasure, 1);
+    // get product price based on price list version and product id
+    const ppriceForChangingOrderLineUnitOfMeasure &#x3D; await this.db.getProductPrice(
+      productId,
+      verForChangingOrderLineUnitOfMeasure[0].M_PriceList_Version_ID
+    );
+    // here we recieve the current order line quatity entered and the actual price
+    const qtyForChangingOrderLineUnitOfMeasure &#x3D; lineForChangingOrderLineUnitOfMeasure[0].QtyEntered;
+    const PricestdForChangingOrderLineUnitOfMeasure &#x3D; ppriceForChangingOrderLineUnitOfMeasure[0].PriceStd;
+    const PriceActualForChangingOrderLineUnitOfMeasure &#x3D; lineForChangingOrderLineUnitOfMeasure[0].PriceActual;
+    const current_net_priceForChangingOrderLineUnitOfMeasure &#x3D; lineForChangingOrderLineUnitOfMeasure[0].LineNetAmt;
+    const order_line_idForChangingOrderLineUnitOfMeasure &#x3D; lineForChangingOrderLineUnitOfMeasure[0].C_OrderLine_ID;
+    // here we recieve the dividerate
+    let price &#x3D; PriceActualForChangingOrderLineUnitOfMeasure;
+    let netprice &#x3D; 0;
+    price&#x3D;(uomDivideRateForChangingOrderLineUnitOfMeasure &#x3D;&#x3D;&#x3D; 0)?PricestdForChangingOrderLineUnitOfMeasure:PricestdForChangingOrderLineUnitOfMeasure * uomDivideRateForChangingOrderLineUnitOfMeasure;
+    // here we set the net price
+    netprice &#x3D; price * qtyForChangingOrderLineUnitOfMeasure;
+    //here we are going to calculate the new grand total
+    const order &#x3D; await this.db.getOrder(orderid, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;);
+    const current_grand_total &#x3D; order[0].GrandTotal;
+    // first all we will remove the current product value
+    const totalMinusCurrentProductValue &#x3D;
+      current_grand_total - current_net_priceForChangingOrderLineUnitOfMeasure;
+    // now we calculate the new grand total line[0].C_OrderLine_ID
+    const new_grand_total &#x3D; totalMinusCurrentProductValue + netprice;
+    return this.updateOrderLineElements(
+      orderid,
+      order_line_idForChangingOrderLineUnitOfMeasure,
+      uomidForChangingOrderLineUnitOfMeasure,
+      netprice,
+      price,
+      new_grand_total
+    );
+  }
+
+  async getUnitOfMeasureConversions(productIdForFetchingUnitOfMeasureConversion: any) {
+    // get product
+    let uomConversionsForFetchingUnitOfMeasureConversion: UOMConversion[] &#x3D; [];
+    const productForFetchingUnitOfMeasureConversion: MProduct[] &#x3D; await this.db.getProducts(productIdForFetchingUnitOfMeasureConversion, 0);
+    if (productForFetchingUnitOfMeasureConversion &#x3D;&#x3D;&#x3D; undefined || productForFetchingUnitOfMeasureConversion &#x3D;&#x3D;&#x3D; null || productForFetchingUnitOfMeasureConversion.length &#x3D;&#x3D;&#x3D; 0) {
+      throw new Error(&#x27;product does not exist&#x27;);
+    }
+    let line_uomForFetchingUnitOfMeasureConversion &#x3D; new UOMConversion();
+    line_uomForFetchingUnitOfMeasureConversion.C_UOM_ID &#x3D; productForFetchingUnitOfMeasureConversion[0].C_UOM_ID;
+    line_uomForFetchingUnitOfMeasureConversion.C_UOM_To_ID &#x3D; productForFetchingUnitOfMeasureConversion[0].C_UOM_ID;
+    line_uomForFetchingUnitOfMeasureConversion.DivideRate &#x3D; 1;
+    line_uomForFetchingUnitOfMeasureConversion.Name &#x3D; &#x27;base&#x27;;
+    uomConversionsForFetchingUnitOfMeasureConversion.push(line_uomForFetchingUnitOfMeasureConversion);
+    //here we get all the UOM product
+    const allUOMCONversionForFetchingUnitOfMeasureConversion &#x3D; await this.db.getProductUOM(productIdForFetchingUnitOfMeasureConversion, 0, 0);
+
+    if (
+      allUOMCONversionForFetchingUnitOfMeasureConversion &#x3D;&#x3D;&#x3D; undefined ||
+      allUOMCONversionForFetchingUnitOfMeasureConversion &#x3D;&#x3D;&#x3D; null ||
+      allUOMCONversionForFetchingUnitOfMeasureConversion.length &#x3D;&#x3D;&#x3D; 0
+    ) {
+      throw new Error(&#x27;cannot fetch products Unit of measure&#x27;);
+    }
+
+    for (const conv of allUOMCONversionForFetchingUnitOfMeasureConversion) {
+      line_uomForFetchingUnitOfMeasureConversion &#x3D; new UOMConversion();
+      line_uomForFetchingUnitOfMeasureConversion.C_UOM_ID &#x3D; conv.C_UOM_ID;
+      line_uomForFetchingUnitOfMeasureConversion.C_UOM_To_ID &#x3D; conv.C_UOM_To_ID;
+      line_uomForFetchingUnitOfMeasureConversion.DivideRate &#x3D; conv.DivideRate;
+      line_uomForFetchingUnitOfMeasureConversion.Name &#x3D; conv.Name;
+      uomConversionsForFetchingUnitOfMeasureConversion.push(line_uomForFetchingUnitOfMeasureConversion);
+    }
+
+    return uomConversionsForFetchingUnitOfMeasureConversion;
+  }
+
+  checkParametersBeforeInit(orderidChecker: any, productIdChecker: any) {
+    //first of all we check the enters parameters
+    if (orderidChecker &#x3D;&#x3D;&#x3D; null || orderidChecker &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please select the order&#x27;);
+    }
+    if (productIdChecker &#x3D;&#x3D;&#x3D; null || productIdChecker &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;you should provide the product&#x27;);
+    }
+  }
+
+  async updateOrderLineElements(
+    orderidParameterForUpdatingOrderline: any,
+    order_line_idParameterForUpdatingOrderline: string,
+    uomidParameterForUpdatingOrderline: number,
+    netpriceParameterForUpdatingOrderline: number,
+    priceParameterForUpdatingOrderline: number,
+    new_grand_totalParameterForUpdatingOrderline: number
+  ) {
+    // now we are going to mke updates
+    // update line UOM
+    const resVariableForUpdatingOrderline &#x3D; await this.db.updateOrderLine(
+      order_line_idParameterForUpdatingOrderline,
+      &#x27;uom&#x27;,
+      uomidParameterForUpdatingOrderline.toString()
+    );
+
+    if (resVariableForUpdatingOrderline.rowsAffected !&#x3D;&#x3D; 1) {
+      throw new Error(&#x27;could not update order line item UOM&#x27;);
+    }
+    // update line netamount
+    const res2VariableForUpdatingOrderline &#x3D; await this.db.updateOrderLine(
+      order_line_idParameterForUpdatingOrderline,
+      &#x27;netamount&#x27;,
+      netpriceParameterForUpdatingOrderline.toString()
+    );
+    if (res2VariableForUpdatingOrderline.rowsAffected !&#x3D;&#x3D; 1) {
+      throw new Error(&#x27;could not update order line item net amount&#x27;);
+    }
+    // update line netamount
+    const res3VariableForUpdatingOrderline &#x3D; await this.db.updateOrderLine(
+      order_line_idParameterForUpdatingOrderline,
+      &#x27;actualprice&#x27;,
+      priceParameterForUpdatingOrderline.toString()
+    );
+
+    if (res3VariableForUpdatingOrderline.rowsAffected !&#x3D;&#x3D; 1) {
+      throw new Error(&#x27;could not update order line item price actual&#x27;);
+    }
+    // update order grand total with new total
+    await this.order.updateOrder(
+      orderidParameterForUpdatingOrderline,
+      &#x27;&#x27;,
+      new_grand_totalParameterForUpdatingOrderline,
+      0
+    );
+    return this.order.getOLine(
+      orderidParameterForUpdatingOrderline,
+      order_line_idParameterForUpdatingOrderline
+    );
+  }
+
+  async returnProductUOM(productid: number) {
+    // get product
+    const product: MProduct[] &#x3D; await this.db.getProducts(productid, 0);
+    if (product &#x3D;&#x3D;&#x3D; undefined || product &#x3D;&#x3D;&#x3D; null || product.length &#x3D;&#x3D;&#x3D; 0) {
+      throw new Error(&#x27;product does not exist&#x27;);
+    }
+
+    return product.length;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'UOMService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

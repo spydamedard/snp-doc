@@ -1,0 +1,1406 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>po-slibrary documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">po-slibrary documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >PartnerService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/poslibrary/src/lib/services/Partners/partner.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkPartnerCategoryParams" >checkPartnerCategoryParams</a>
+                            </li>
+                            <li>
+                                <a href="#checkPartnerCityParams" >checkPartnerCityParams</a>
+                            </li>
+                            <li>
+                                <a href="#checkPartnerCompanyCommerceRegisterParams" >checkPartnerCompanyCommerceRegisterParams</a>
+                            </li>
+                            <li>
+                                <a href="#checkPartnerCompanyContribuableParams" >checkPartnerCompanyContribuableParams</a>
+                            </li>
+                            <li>
+                                <a href="#checkPartnerCompanyCustomerNameParams" >checkPartnerCompanyCustomerNameParams</a>
+                            </li>
+                            <li>
+                                <a href="#checkPartnerCompanyQuaterParams" >checkPartnerCompanyQuaterParams</a>
+                            </li>
+                            <li>
+                                <a href="#checkPartnerContacts" >checkPartnerContacts</a>
+                            </li>
+                            <li>
+                                <a href="#checkPartnerIsCompanyParams" >checkPartnerIsCompanyParams</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createBusinessPartner" >createBusinessPartner</a>
+                            </li>
+                            <li>
+                                <a href="#defaultData" >defaultData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getBusinnessPartnerCategories" >getBusinnessPartnerCategories</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getBusinnessPartnerGroup" >getBusinnessPartnerGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getBusinnessPartners" >getBusinnessPartners</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getBusinnessPartnersCity" >getBusinnessPartnersCity</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateOrderBusinessPartner" >UpdateOrderBusinessPartner</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(db: <a href="../injectables/DatabaseService.html" target="_self">DatabaseService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatabaseService.html" target="_self" >DatabaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerCategoryParams"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerCategoryParams</b></span>
+                        <a href="#checkPartnerCategoryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerCategoryParams(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:17</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerCityParams"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerCityParams</b></span>
+                        <a href="#checkPartnerCityParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerCityParams(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerCompanyCommerceRegisterParams"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerCompanyCommerceRegisterParams</b></span>
+                        <a href="#checkPartnerCompanyCommerceRegisterParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerCompanyCommerceRegisterParams(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerCompanyContribuableParams"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerCompanyContribuableParams</b></span>
+                        <a href="#checkPartnerCompanyContribuableParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerCompanyContribuableParams(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerCompanyCustomerNameParams"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerCompanyCustomerNameParams</b></span>
+                        <a href="#checkPartnerCompanyCustomerNameParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerCompanyCustomerNameParams(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerCompanyQuaterParams"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerCompanyQuaterParams</b></span>
+                        <a href="#checkPartnerCompanyQuaterParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerCompanyQuaterParams(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerContacts"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerContacts</b></span>
+                        <a href="#checkPartnerContacts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerContacts(phone: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, mail: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, bp_user_name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>phone</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mail</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bp_user_name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPartnerIsCompanyParams"></a>
+                    <span class="name">
+                        <span ><b>checkPartnerIsCompanyParams</b></span>
+                        <a href="#checkPartnerIsCompanyParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPartnerIsCompanyParams(data: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBusinessPartner"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createBusinessPartner</b></span>
+                        <a href="#createBusinessPartner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createBusinessPartner(part: <a href="../classes/BusinessBartner.html" target="_self">BusinessBartner</a>, orderid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>part</td>
+                                    <td>
+                                                <code><a href="../classes/BusinessBartner.html" target="_self" >BusinessBartner</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>orderid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;number&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultData"></a>
+                    <span class="name">
+                        <span ><b>defaultData</b></span>
+                        <a href="#defaultData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>defaultData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="188"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:188</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>any[]</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBusinnessPartnerCategories"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getBusinnessPartnerCategories</b></span>
+                        <a href="#getBusinnessPartnerCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBusinnessPartnerCategories()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Categorie.html" target="_self" >Promise&lt;Categorie[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBusinnessPartnerGroup"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getBusinnessPartnerGroup</b></span>
+                        <a href="#getBusinnessPartnerGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBusinnessPartnerGroup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Group.html" target="_self" >Promise&lt;Group[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBusinnessPartners"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getBusinnessPartners</b></span>
+                        <a href="#getBusinnessPartners"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBusinnessPartners()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:135</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/CBPartner.html" target="_self" >Promise&lt;CBPartner[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBusinnessPartnersCity"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getBusinnessPartnersCity</b></span>
+                        <a href="#getBusinnessPartnersCity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBusinnessPartnersCity()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/City.html" target="_self" >Promise&lt;City[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateOrderBusinessPartner"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>UpdateOrderBusinessPartner</b></span>
+                        <a href="#UpdateOrderBusinessPartner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateOrderBusinessPartner(partnerid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, orderid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">projects/poslibrary/src/lib/services/Partners/partner.service.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>partnerid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>orderid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  BusinessBartner,
+  City,
+  Group,
+  Categorie,
+} from &#x27;./../../models/ui-model&#x27;;
+import { DatabaseService } from &#x27;./../database/database.service&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { CBPartner } from &#x27;../../models/org-data&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class PartnerService {
+  constructor(private db: DatabaseService) {}
+
+  checkPartnerCategoryParams(data: number) {
+    if (data &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a  business partner categorie&#x27;);
+    }
+    if (data &lt; 0) {
+      throw new Error(&#x27;please provide a valid business partner categorie&#x27;);
+    }
+  }
+
+  checkPartnerCityParams(data: number) {
+    if (data &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner city&#x27;);
+    }
+    if (data &lt; 0) {
+      throw new Error(&#x27;please provide a valid business partner city&#x27;);
+    }
+  }
+
+  checkPartnerIsCompanyParams(data: string) {
+    if (data &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(
+        &#x27;please check if this business partner it&quot;s a company or not&#x27;
+      );
+    }
+    if (data &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw new Error(&#x27;the company checker cannot be empty&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;the company checker cannot be null&#x27;);
+    }
+  }
+
+  checkPartnerCompanyContribuableParams(data: string) {
+    if (data &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner contribuable&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw new Error(&#x27;business partner contribuable cannot be empty&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;business partner contribuable cannot be null&#x27;);
+    }
+  }
+
+  checkPartnerCompanyCommerceRegisterParams(data: string) {
+    if (data &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner registre de commerce&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw new Error(&#x27;business partner registre de commerce cannot be empty&#x27;);
+    }
+  }
+
+  checkPartnerCompanyCustomerNameParams(data: string) {
+    if (data &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner name&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw new Error(&#x27;business partner name cannot be empty&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;business partner name cannot be null&#x27;);
+    }
+  }
+
+  checkPartnerCompanyQuaterParams(data: string) {
+    if (data &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner quater&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      throw new Error(&#x27;business partner quater cannot be empty&#x27;);
+    }
+    if (data &#x3D;&#x3D;&#x3D; null) {
+      throw new Error(&#x27;business partner quater cannot be null&#x27;);
+    }
+  }
+
+  checkPartnerContacts(phone: string, mail: string, bp_user_name: string) {
+    if (mail &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner user email&#x27;);
+    }
+    if (bp_user_name &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner user name&#x27;);
+    }
+    if (phone &#x3D;&#x3D;&#x3D; undefined) {
+      throw new Error(&#x27;please provide a business partner user phone&#x27;);
+    }
+  }
+
+  async createBusinessPartner(
+    part: BusinessBartner,
+    orderid: string
+  ): Promise&lt;number&gt; {
+    this.checkPartnerCategoryParams(part.BP_Categorie);
+    this.checkPartnerCityParams(part.BP_City);
+    this.checkPartnerIsCompanyParams(part.BP_IsCompany);
+    if (part.BP_IsCompany &#x3D;&#x3D;&#x3D; &#x27;Y&#x27;) {
+      this.checkPartnerCompanyContribuableParams(part.BP_IEXT_Contribuable);
+      this.checkPartnerCompanyCommerceRegisterParams(
+        part.BP_IEXT_Registre_Commerce
+      );
+      this.checkPartnerCompanyCustomerNameParams(part.BP_Name);
+      this.checkPartnerCompanyQuaterParams(part.BP_Quarter);
+    }
+    this.checkPartnerContacts(
+      part.BP_User_phone,
+      part.BP_User_email,
+      part.BP_User_name
+    );
+    return 0;
+  }
+  async UpdateOrderBusinessPartner(
+    partnerid: number,
+    orderid: string
+  ): Promise&lt;boolean&gt; {
+    return false;
+  }
+
+  async getBusinnessPartners(): Promise&lt;CBPartner[]&gt; {
+    if (this.db.issqlite) {
+      const partners &#x3D; await this.db.getBPartner();
+      if (partners !&#x3D;&#x3D; undefined &amp;&amp; partners !&#x3D;&#x3D; null &amp;&amp; partners.length &gt; 0) {
+        return Promise.resolve(partners);
+      }
+    }
+    return Promise.resolve(this.defaultData());
+  }
+
+  async getBusinnessPartnersCity(): Promise&lt;City[]&gt; {
+    if (this.db.issqlite) {
+      let partnersLoc &#x3D; await this.db.getPartnerCity();
+      if (
+        partnersLoc !&#x3D;&#x3D; undefined &amp;&amp;
+        partnersLoc !&#x3D;&#x3D; null &amp;&amp;
+        partnersLoc.length &gt; 0
+      ) {
+        return Promise.resolve(partnersLoc);
+      }
+    }
+    return Promise.resolve(this.defaultData());
+  }
+
+  async getBusinnessPartnerGroup(): Promise&lt;Group[]&gt; {
+    if (this.db.issqlite) {
+      const partnersgroup &#x3D; await this.db.getPartnerGroup();
+      if (
+        partnersgroup !&#x3D;&#x3D; undefined &amp;&amp;
+        partnersgroup !&#x3D;&#x3D; null &amp;&amp;
+        partnersgroup.length &gt; 0
+      ) {
+        return Promise.resolve(partnersgroup);
+      }
+    }
+    return Promise.resolve(this.defaultData());
+  }
+
+  async getBusinnessPartnerCategories(): Promise&lt;Categorie[]&gt; {
+    if (this.db.issqlite) {
+      const partnerscategories &#x3D; await this.db.getPartnerCategories();
+      if (
+        partnerscategories !&#x3D;&#x3D; undefined &amp;&amp;
+        partnerscategories !&#x3D;&#x3D; null &amp;&amp;
+        partnerscategories.length &gt; 0
+      ) {
+        return Promise.resolve(partnerscategories);
+      }
+    }
+
+    return Promise.resolve(this.defaultData());
+  }
+
+  defaultData(): any[] {
+    const data: any[] &#x3D; [];
+    return data;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PartnerService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
